@@ -1,0 +1,26 @@
+.prem{
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid red;
+    padding: 15px;
+    margin: 20px;
+}
+.parent{
+    border: 1px solid red; 
+    height: 100vh; 
+    width: 100vw; 
+    background-color : antiquewhite !important;
+
+}
+.child{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 50%;
+     height: 50%;
+      background-color: aqua; 
+}
+.style{
+    padding: 20px; font: 1em sans-serif; font-weight: 100;
+}
