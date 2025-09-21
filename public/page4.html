@@ -14,12 +14,102 @@
             background-color: blue;
 
         }
+        .none{
+            margin:0;
+            height: 100vh;
+            display: none;
+            justify-content: center; /*horizantaly center the content */
+            align-items: center; /*vertically center the content*/
+            background-color: rgb(51, 208, 64);
+        }
+        .block{
+            margin:0;
+            height: 100vh;
+            display: block;
+            justify-content: center; /*horizantaly center the content */
+            align-items: center; /*vertically center the content*/
+            background-color: rgb(237, 122, 182);
+        }
+        .inline-block{
+            margin:0;
+            height: 100vh;
+            display: inline-block;
+            justify-content: center; /*horizantaly center the content */
+            align-items: center; /*vertically center the content*/
+            background-color: rgb(208, 51, 51);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .container > div {
+            background-color: rgb(255, 210, 127);
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 1rem;
+
+        }
+        .container > div > p{text-align: center;}
+
+        .calc{
+            margin: 10vh;
+            height: 40vh;
+            width: calc(100vh-100px);
+            background-color: antiquewhite;
+            border: 2px dashed blue;
+            border-radius: 16px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     </style>
 </head>
-<body class="parent">
+<body >
     <div style="background-color: aqua; width: 50vh; height: 50vh; display: flex; justify-content: center; align-items: center;"  >
 
     </div>
+    <h1>flex</h1>
+    <div class="none">
+        <p>none</p>
+    </div>
+    <div class="block">
+        <p>block</p>
+    </div>
+    <div class="inline-block">
+        <p>inline-block</p>
+    </div>
+    <h1>grid</h1>
+
+    <div class="container">
+        <div>
+            <p>1</p>
+        </div>
+        <div>
+            <p>2</p>
+        </div>
+        <div>
+            <p>3</p>
+        </div>
+        <div>
+            <p>4</p>
+        </div>
+        <div>
+            <p>5</p>
+        </div>
+        <div>
+            <p>6</p>
+        </div>
+    </div>
+    <h1>height calc in css</h1>
+    <div class="calc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium rem suscipit, provident quidem reprehenderit odit obcaecati recusandae dignissimos magni, consequuntur fugiat corrupti nobis blanditiis quae? Obcaecati neque enim commodi.
+    </div>
+
     
 </body>
 </html>
