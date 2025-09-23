@@ -66,6 +66,32 @@
             align-items: center;
             justify-content: center;
         }
+        .table{
+            border-collapse: separate;
+            border-spacing: 1em 3rem;
+            border: 10px solid black;
+            border-color: aqua red blue green;
+        }
+        td{
+            border: 1px solid black;
+        }
+        .table1{
+            border-collapse: inherit;
+            border-spacing: 1em 3rem;
+        }
+
+        #animal{
+            border-collapse: separate;
+            border: 2px solid black;
+
+        }
+        #animal tr:nth-child(2){
+            background-color: aqua;
+        }
+        tr:hover{
+            background-color: aquamarine;
+        }
+
 
     </style>
 </head>
@@ -109,6 +135,53 @@
     <div class="calc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium rem suscipit, provident quidem reprehenderit odit obcaecati recusandae dignissimos magni, consequuntur fugiat corrupti nobis blanditiis quae? Obcaecati neque enim commodi.
     </div>
+
+    <table class="table">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+        <tr>
+            <table class="table1">
+        <!-- <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr> -->
+        <tr>
+            <td>five</td>
+            <td>six</td>
+            <td>seven</td>
+            <td>eight</td>
+        </tr>
+    </table>
+        </tr>
+    </table>
+
+    <table id="animal">
+        <tr>
+            <td>tiger</td>
+            <td>lion</td>
+            <td>cow</td>
+            <td>dog</td>
+        </tr>
+        <tr>
+            <td>tiger</td>
+            <td>lion</td>
+            <td>cow</td>
+            <td>dog</td>
+        </tr>
+    </table>
+    
 
     
 </body>
