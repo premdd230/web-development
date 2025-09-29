@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION</title>
+    <style>
+        
+        .position_static{
+            position: static;
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            top: 10px;
+            left: 20px;
+        }
+        table{
+            border: 1px solid black;
+            height: 100px;
+            /* display: inline-block; */
+            margin: 20px;
+            /* overflow: auto; */
+        }
+
+        thead{
+            position: static;
+            
+        }
+        tbody{
+            height: 50vh;
+            width: 100%;
+            /* overflow-y: scroll; */
+            display: inline-block;
+            overflow: auto;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            
+        }
+        .block2{
+            height: 10vh;
+            width: 10vw;
+            background-color: white;
+            position: fixed;
+            top: 40px;
+            left: 50px;
+        }
+
+        .block1{
+            height: 10vh;
+            width: 10vw;
+            background-color: white;
+            position: sticky;
+            top: 40px;
+            left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="position_static">
+        <h1>PREM</h1>
+    </div>
+    <table>
+        <thead>
+            <div style="position: static;">
+                <tr>
+                <td>h1 </td>
+                <td>h2 </td>
+                <td>h3 </td>
+                </tr>
+            </div>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+            <tr>
+                <td>one </td>
+                <td>two </td>
+                <td>three </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer1 </td>
+                <td>footer2 </td>
+                <td>footer3 </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="container">
+        <div class="block1">
+            block1
+        </div>
+        <div class="block2">
+            block2
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
