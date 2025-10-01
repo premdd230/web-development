@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction</title>
+    <style>
+        .div{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            /* transition: height 3s, width 3s, background-color 3s; */
+            transition-property: width, height;
+            transition-duration: 3000ms;
+
+            transition-timing-function: ease;
+            transition-delay: 3s;
+            
+        }
+        .div:hover{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            
+        }
+        .a{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .span{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 0px;
+            position: absolute;
+            z-index: 1;
+            left: 35px;
+
+        }
+        .a:hover .span {
+            visibility: visible;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        transition-property
+    </div>
+
+    <a class="a" href="">Tool_tip<span class="span">PREMKUMAR</span></a>
+
+    
+</body>
+</html>

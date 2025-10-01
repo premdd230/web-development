@@ -57,6 +57,36 @@
             left: 50px;
         }
 
+        .container2{
+            /* background-color: blue; */
+            background-color: transparent;
+            border: 1px solid black;
+            height: 50vh;
+            width: 50vw;
+            /* z-index: 999; */
+        }
+        .index{
+            background-color: blueviolet;
+
+            position: absolute;
+            height: 30vh;
+            width: 30vw;
+            z-index: -1;
+        }
+        .paragraph{
+            border: 1px solid black;
+            height: 150px;
+            width: 200px;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            /* white-space: nowrap; */
+            overflow: hidden;
+        }
+        .word_space{
+            margin-top: 2rem;
+            word-spacing: 10px;
+        }
+
 
     </style>
 </head>
@@ -190,6 +220,50 @@
         </div>
     </div>
 
+    <div class="container2">
+        container2
+        <div class="index">
+            index
+        </div>
+    </div>
+
+    <div class="paragraph">
+        Loremqwertyuiopasdfghjklzxcvbnmqwertyasdfghjklzxcvbnmqwertyuiopasdghjklzxcvbnmqwertyuioasdfghjkzxcvbnmqwertyuioasdfghjkzxcvbnwertysdfghjk ipsum dolor sit amet consectetur, adipisicing elit. Quo quaerat labore asperiores atque nostrum voluptatibus laudantium assumenda earum cupiditate mollitia, culpa aliquam inventore, cum, eaque repellendus molestiae quidem nihil nam.
+    </div>
+
+    <div class="word_space">
+        lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quaerat labore asperiores atque nostrum voluptatibus laudantium assumenda earum cupiditate mollitia, culpa aliquam inventore, cum, eaque repellendus molestiae quidem nihil nam.
+    </div>
+
+    <div style="white-space: nowrap; width: 200px; border: 1px solid black; text-overflow: ellipsis;  overflow: hidden;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis voluptatum ea rerum laborum ipsam libero, reprehenderit quidem molestias mollitia architecto autem sed debitis quam sunt? Possimus enim saepe omnis.
+    </div>
+
+    <div style="writing-mode: vertical-rl;">
+        vertical-rl
+    </div>
+    <br>
+    <div style="writing-mode: vertical-lr;">
+        vertical-lr
+    </div>
+    <br>
+    <div style="writing-mode: horizontal-tb;">
+        horizontal-tb
+    </div>
+    <br>
+    <div style="writing-mode: sideways-lr;">
+        sideways-lr
+    </div>
+    <br>
+    <div style="writing-mode: sideways-rl;">
+        sideways-rl
+    </div>
+    <h1>text-orientation: upright;<br></h1>
+    <h1 style="writing-mode: vertical-rl; text-orientation: upright;">
+        PREMKUMAR
+    </h1>
+    
+    
 
 
     
