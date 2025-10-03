@@ -46,6 +46,84 @@
             visibility: visible;
 
         }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color:rgba(221, 10, 10, 0.5);
+            animation-name: prem;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count: 2;
+            /* animation-direction: reverse; */
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+
+
+        @keyframes prem{
+            0%{
+                background-color: blueviolet;
+                top: 0;
+                animation-timing-function: ease-out;
+            }
+            25%{
+                background-color: dodgerblue;
+                top: 100px;
+                animation-timing-function: ease-in;
+
+            }
+            50%{
+                background-color: orange;
+                top: 200px;
+                animation-timing-function: ease-in;
+            }
+            75%{
+                background-color: greenyellow;
+                top: 100px;
+                animation-timing-function: ease-in;
+            }
+            100%{
+                background-color: aquamarine;
+                top: 0;
+                animation-timing-function: ease-out;
+            }
+        }
+
+        .container > a{
+            text-decoration: none;
+            border: 1px solid black;
+            /* padding: 3px 20px; */
+            background-color: dodgerblue;
+            border-radius: 5px;
+            /* flex-grow: 1; */
+            text-align: center;
+            margin-right: 5px;
+            
+        }
+        .container > a:nth-of-type(1){
+            flex-grow: 1;
+        }
+        .container > a:nth-of-type(2){
+            flex-grow: 1;
+        }
+        .container > a:nth-of-type(3){
+            flex-grow: 2;
+        }
+        .container > a:nth-of-type(4){
+            flex-grow: 2;
+        }
+        
+
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
     </style>
 </head>
@@ -55,6 +133,19 @@
     </div>
 
     <a class="a" href="">Tool_tip<span class="span">PREMKUMAR</span></a>
+    <h1>bouncing bal</h1>
+    <div class="ball">
+
+    </div>
+
+    <div class="container">
+        <a href="">previous</a>
+        <a href="">next</a>
+        <a href="">2</a>
+        <a href="">3</a>
+    </div>
+
+
 
     
 </body>
