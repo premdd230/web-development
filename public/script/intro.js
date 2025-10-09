@@ -37,6 +37,55 @@ let boolean = true;
 console.log(!boolean);
 
 //comparision operator 
+// x= x+2;
+// x+=2;
+
+// loop
+
+// return function
+function add(a,b){
+    return a+b;
+}
+console.log(add(1,2));
+
+console.log("for loop");
+
+for (let index = 0; index < 10; index++) {
+    console.log(index);
+}
+
+let initial = 20;
+while (initial >= 0) {
+    console.log(initial);
+    initial--;
+}
+console.log("pre increment using while loop");
+
+initial=0;
+while (initial <= 20 ) {
+    console.log(initial);
+    ++initial;
+}
+do {
+    console.log("initisl value is "+ initial); //21
+    ++initial;
+    
+} while (initial<30);
+
+//array
+let sample =[1, "2", true];
+
+sample.forEach(element => {
+    console.log(element);
+});
+
+for(var item in sample){
+    console.log(sample[item]);
+}
+
+
+
+
 
 
 
