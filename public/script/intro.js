@@ -83,7 +83,82 @@ for(var item in sample){
     console.log(sample[item]);
 }
 
-//   ?? operators
+//   ?? operators null collusion operator
+
+// control statement
+
+let numbers = 8;
+if (numbers==5) {
+    console.log("number" );
+}
+else if(numbers==8){
+    console.log("else if working");
+    
+}
+else{
+    //without if statement else is not work
+    console.log("else working");
+}
+
+let abc;
+numbers = abc ?? 5;
+console.log(numbers);
+
+switch (numbers) {
+    case 2: 
+        console.log("two");
+        break;
+    case 4:
+        console.log("four");
+        break;
+    case 5:
+        console.log("five");
+        break;
+    default:
+        console.log("nothing");
+    
+        break;
+}
+
+
+let apple = (numbers==2) ? "five" : "not five";
+console.log(apple);
+
+
+for (let mango = 0; mango <= 20; mango++) {
+    if (mango==15) {
+        
+        console.log("before continue key word 15");
+        continue;
+        console.log("after continue key word 15");
+        
+    } else {
+        console.log("condition passed"+mango);
+        
+    }
+    
+}
+
+//Date type: string // 
+let animal= "tiger";
+console.log(animal.length); //5
+console.log(animal.charAt(2));
+console.log(animal[2] + " working");
+
+console.log(animal.split(""));
+
+//instead of g push the letter "h"
+
+//string methods
+
+
+
+
+
+
+
+
+
 
 
     
