@@ -148,8 +148,54 @@ console.log(animal[2] + " working");
 console.log(animal.split(""));
 
 //instead of g push the letter "h"
+let replaces;
+replaces = animal.replaceAll("g","h");
+console.log(replaces);
+
 
 //string methods
+let unicode="Hello\uD800";
+console.log(unicode);
+
+let str="dog";
+console.log(str.charCodeAt(0));//has key: american standard code for information interchange
+console.log(String.fromCharCode(100));// from has key value to alphabate.
+console.log("🐶".codePointAt(0));
+str="Arul-test value";
+console.log(str.slice(5,9));
+console.log(str);
+//Access Value center  : insteed of c need z;
+
+//object : data type used in obj: string, number, boolean, big-int, null, undifiened, symbol(special)
+
+
+let ball = {
+    name: "ball",
+    color: "red",
+    price:150,
+    emoj:"🐶",
+    [Symbol('arul')] : '_1',
+    type:function (p) {
+        return p;
+    },
+    letter:{
+        name:"prem",
+        age:24
+    }
+}
+console.log(ball);
+console.log(ball.type("obj func working"));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
