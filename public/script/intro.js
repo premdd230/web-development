@@ -164,7 +164,6 @@ console.log("🐶".codePointAt(0));
 str="Arul-test value";
 console.log(str.slice(5,9));
 console.log(str);
-//Access Value center  : insteed of c need z;
 
 //object : data type used in obj: string, number, boolean, big-int, null, undifiened, symbol(special)
 
@@ -185,6 +184,108 @@ let ball = {
 }
 console.log(ball);
 console.log(ball.type("obj func working"));
+
+//task Access Value center  : insteed of c need z;
+// (function name(ans) {
+    let str1="Access Value center";
+    let index=str1.indexOf("c");
+    console.log(index);
+    str1[2] = 'z';
+    console.log("first try" + str1);
+    let array = str1.split("");
+    //console.log(array);
+    let newstring ="";
+    for (let index = 0; index < array.length; ++index) {
+
+        if (index==2) {
+            //str1[2] = 'z';
+            array[index] = "z";
+        }
+        newstring += array[index];
+    }
+    console.log(newstring);
+    debugger
+    console.log("answer: ->" + str1.substring(0, 2) + 'z' + str1.substring(3));
+    
+// debugger
+
+//list of obj
+let obj1=[
+    {
+    name: "ball",
+    color: "red",
+    price:150,
+    emoj:"🐶",
+    [Symbol('arul')] : '_1',
+    type:function (p) {
+        return p;
+    },
+    letter:{
+        name:"prem",
+        age:24
+    }
+},
+{
+    name: "ball",
+    color: "red",
+    price:150,
+    emoj:"🐶",
+    [Symbol('arul')] : '_1',
+    type:function (p) {
+        return p;
+    },
+    letter:{
+        name:"prem",
+        age:24
+    }
+},
+{
+    name: "ball",
+    color: "red",
+    price:150,
+    emoj:"🐶",
+    [Symbol('arul')] : '_1',
+    type:function (p) {
+        return p;
+    },
+    letter:{
+        name:"prem",
+        age:24
+    }
+}
+
+]
+
+
+console.log(obj1);
+    console.log(Object.entries(obj1[0]));
+
+let school=[
+    ["name", "praveen"],
+    ["age", 12]
+];
+    console.log(Object.fromEntries(school));
+
+//map
+let map = new Map(Object.entries(obj1[0]));
+console.log(map);
+console.log(map.keys());
+console.log(map.values());
+console.log(map.get("name"))
+console.log(Array.from(map));
+
+//map vs obj
+//map preserve the inserting order 
+//cannot find out the obj size
+//map has a predefined method like map.size
+//compare to object map is faster than obj
+//while using map it is not serialization the json
+
+let new_map = new Map();
+new_map.set("email", "arul@gmail.com");
+new_map.set("email", "praveen@gmail.com");
+let old_map= [new Map([["name3", "arul3"]]), new Map([["name2", "arul2"]]), new Map([["name1", "arul1"]])];
+console.log(old_map[0].get("name3"));
 
 
 
