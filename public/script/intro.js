@@ -289,6 +289,54 @@ new_map.set("email", "praveen@gmail.com");
 let old_map= [new Map([["name3", "arul3"]]), new Map([["name2", "arul2"]]), new Map([["name1", "arul1"]])];
 console.log(old_map[0].get("name3"));
 
+//Array
+// [[0],[1],[2]]   //0,1,2 --> is called as an element
+let myArray=[1, 2, 5, 3, 4, 5];
+// console.log(myArray);
+// //dynamic size
+// myArray[5]=6;
+// console.log(myArray);
+// myArray[5]="prem";
+// console.log(myArray);
+// //heterogrneous => it allow the multiple data type
+// myArray.splice(3,1);
+// console.log(myArray);
+let new_arr=[];
+
+for (let index = 4; index >=0; index--) {
+    
+    new_arr.push(myArray[index]);
+    
+    
+    
+}
+
+console.log(new_arr);
+console.log(new_arr.sort());
+console.log(new_arr.toSorted());
+
+
+console.log(new_arr.reverse());
+
+// console.log(myArray.includes(4));
+// console.log(myArray.indexOf(10));
+// console.log(myArray.indexOf(5));
+// console.log(myArray.lastIndexOf(5));
+// console.log(myArray.firstIndexOf(5));
+
+let arr1 = new Array(); //instance  creation
+// new Array(1,2,3,4,5)
+arr1=['aru', 'prem', 'Kumar', 'arul'];
+
+console.log(arr1.find(e=>(e=='arul')));
+
+
+
+
+
+
+
+
 
 
 
