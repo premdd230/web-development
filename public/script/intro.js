@@ -1,3 +1,5 @@
+//script link with the "test.html"
+
 let toy = "(let) string is a collection of characters";
 toy = "toy over write";
 //let toy = "toy over write"; // let : local scope variable and var is a global scope variable
@@ -204,7 +206,7 @@ console.log(ball.type("obj func working"));
         newstring += array[index];
     }
     console.log(newstring);
-    debugger
+    //debugger
     console.log("answer: ->" + str1.substring(0, 2) + 'z' + str1.substring(3));
     
 // debugger
@@ -286,11 +288,6 @@ new_map.set("email", "arul@gmail.com");
 new_map.set("email", "praveen@gmail.com");
 let old_map= [new Map([["name3", "arul3"]]), new Map([["name2", "arul2"]]), new Map([["name1", "arul1"]])];
 console.log(old_map[0].get("name3"));
-
-
-
-
-
 
 
 
