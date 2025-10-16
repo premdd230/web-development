@@ -326,9 +326,67 @@ console.log(new_arr.reverse());
 
 let arr1 = new Array(); //instance  creation
 // new Array(1,2,3,4,5)
-arr1=['aru', 'prem', 'Kumar', 'arul'];
+arr1=['arun', 'prem', 'Kumar', 'arul'];
 
 console.log(arr1.find(e=>(e=='arul')));
+arr1.forEach(e=>{
+    console.log(e + "kumar");
+    
+});
+console.log(arr1);
+
+arr1 = arr1.map(e => {return (e + "kumar")});
+console.log("map method " + arr1);
+
+//flat_map
+
+arr1.flatMap(e => {return (e + "kumar")});
+console.log("flat map method " + arr1);
+//typed array
+const myArr = new Int8Array(10);
+const myArr1 = new Int32Array(10);
+console.log(myArr, myArr1);
+//
+let arrays =[];
+//arrays.at[0]
+console.log(arrays.at(0));
+let array5 = []; console.log(array5[0]);
+
+
+let array8 = new Array(1);
+ console.log(array8[0]);
+let strArray=[]
+console.log(strArray[5]=6);
+console.log(strArray[0]);
+
+let arul=Array(5).fill(0).map((value, index) => index);
+console.log(arul);
+let sum=0;
+arul.forEach(e=>{sum += e});
+console.log(sum);
+
+let reducer = arul.reduce((a, b) => a + b, 10);
+console.log(reducer);
+
+//to do app
+//xox game
+//train 
+
+//tomorrow
+// set
+// reject 
+// ajax
+
+
+
+
+
+
+
+
+
+
+
 
 
 
