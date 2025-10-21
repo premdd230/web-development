@@ -377,6 +377,52 @@ console.log(reducer);
 // reject 
 // ajax
 
+//set
+let duplicate =[1,2,3,4,5,4,2];
+const out= new Set(duplicate); 
+out.forEach(element => {
+    console.log("set=> " + element);
+});
+
+console.log(duplicate.filter((e, index) => duplicate.indexOf(e) === index));
+
+
+let dup = [];
+for (let index = 0; index < duplicate.length; index++) {
+    const element = duplicate[index];
+    if (!dup.includes(element)) {
+        dup.push(element);
+    }
+} 
+console.log(dup);
+
+let schools = new Set();
+new Set([])
+schools.add("govt school");
+console.log(schools);
+//schools.clear();
+//console.log(schools);
+schools.add("pvt school")
+console.log(schools.has("govt school"));
+const keys = schools.keys(); //map used to set method to set the key for map
+console.log(keys); // use key to itrate the key value
+// concat
+let array_1 = [1,2,3,4,5];
+let array_2 = [6,7,8,9,10,5];
+let join = array_1.concat(array_2)
+console.log("concat " + join);
+
+let set_1 = new Set([1,2,3,4,5]);
+let set_2 = new Set([6,7,8,9,10,5]);
+let concats = set_1.union(set_2);
+concats.keys().forEach(e=> console.log("set union method " + e))
+
+let concat2 = set_1.intersection(set_2);
+concat2.keys().forEach(e=> console.log("set intersection method " + e))
+
+
+
+
 
 
 
